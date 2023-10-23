@@ -84,8 +84,8 @@ const Calculator = () => {
 return (
 <>
 <div id="KeyboardInput">
-  {/*<h1>{input}</h1>*/}
-  <input type="text" id="lname" name="lname" {"input"}>
+  <h1>{input}</h1>
+  {/*<input type="text" id="lname" name="lname">*/}
 </div>
 {/* Number */}
 
