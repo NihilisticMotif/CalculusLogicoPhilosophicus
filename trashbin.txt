@@ -1,0 +1,262 @@
+<input type="text" id="lname" name="lname"/>
+ 
+<br><br></br>
+ 
+<br>
+ 
+      
+ 
+const NumberButton = (props)=>{
+  const [input,setInput]=useState()
+  useEffect(()=>{
+    setInput('')},
+    [] // Runs only on the first render https://www.w3schools.com/react/react_useeffect.asp
+    //[input] // Runs on the first render and when variable 'input' is change
+    )
+    
+  return (
+    <>
+    <button
+    // https://blog.logrocket.com/complete-guide-react-default-props/
+    id={props.id.toString()}>
+    {props.id}
+    </button>
+    </>
+  )
+  }
+ 
+  const [isOnline, setIsOnline] = useState(true);
+  useEffect(() => {
+    function handleOnline() {
+      setIsOnline(true);
+    }
+    function handleOffline() {
+      setIsOnline(false);
+    }
+ 
+#KeyboardInput{
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    height: 100px;
+    text-align: center;
+}
+#KeyboardInput h1{
+    color: #000000;
+    padding-top:10px;
+}
+ 
+  {/*
+  Rule
+    1. O = Operation
+    2. F = Function
+  */}
+ 
+Sigma</button>
+ 
+<div class="ComposeFunction">
+    {/*  0,0  */} <button id="OpenS"            >[</button>
+    {/*  0,1  */} <button id="ClosS"            >]</button>
+    {/*  0,2  */} <button id="Product"          >Pi</button>
+    {/*  0,3  */}
+    {/*  0,4  */} <button id="Sigma"            >Sigma</button>
+    {/*  0,5  */}
+    {/*  1,0  */} <button id="Equal"            >=</button>
+    {/*  1,1  */} <button id="Question"         >?</button>
+    {/*  1,2  */} <button id="Derivative"       >df/dx</button>
+    {/*  1,3  */}
+    {/*  1,4  */} <button id="Limit"            >lim_ x to </button>
+    {/*  1,5  */}
+    {/*  2,0  */} <button id="Infinity"         >Inf</button>
+    {/*  2,1  */}
+    {/*  2,2  */} <button id="Antiderivative"         >∫ f(x) dx</button>
+    {/*  2,3  */}
+    {/*  2,4  */} <button id="Integral"         >∫ab f(x) dx</button>
+    {/*  2,5  */}
+</div>
+ 
+import './ComposeFunction.css'
+ 
+'B'+
+ 
+<div class="Name">
+    <NumberButton id='a' num=''/>
+    <NumberButton id='b' num=''/>
+    <NumberButton id='c' num=''/>
+    <NumberButton id='d' num=''/>
+    <NumberButton id='f' num=''/>
+    <NumberButton id='g' num=''/>
+    <NumberButton id='h' num=''/>
+    <NumberButton id='i' num=''/>
+    <NumberButton id='j' num=''/>
+    <NumberButton id='x' num=''/>
+    <NumberButton id='y' num=''/>
+    <NumberButton id='z' num=''/>
+</div>
+ 
+const Algebra = (props)=>{
+    // const ButtonClick = () => {});};
+  return (
+    <>
+    <button
+    // https://blog.logrocket.com/complete-guide-react-default-props/
+    id={props.id.toString()} 
+    onClick={alert('HelloNewtonHeisenberg')}>
+    {props.id}
+    </button>
+    </>
+)
+}
+
+const Algebras = () => {
+  return (
+<>
+<div class="Algebra">
+  <Algebra  id='0'/>
+  <Algebra  id='1'/>
+  <Algebra  id='2'/>
+  <Algebra  id='3'/>
+  <Algebra  id='4'/>
+  <Algebra  id='5'/>
+  <Algebra  id='6'/>
+  <Algebra  id='7'/>
+  <Algebra  id='8'/>
+  <Algebra  id='9'/>
+  <Algebra id='π'/>
+  <Algebra  id='e' />
+</div>
+</>
+)
+ 
+const ComposeFunction = () => {
+  return (
+<>
+<div class="ComposeFunction">
+    {/*  0,0  */} <button id="OpenS"            >[</button>
+    {/*  0,1  */} <button id="ClosS"            >]</button>
+    {/*  0,2  */} <button id="Product"          >Pi</button>
+    {/*  0,3  */}
+    {/*  0,4  */} <button id="Sigma"            >Sigma</button>
+    {/*  0,5  */}
+    {/*  1,0  */} <button id="Equal"            >=</button>
+    {/*  1,1  */} <button id="Question"         >?</button>
+    {/*  1,2  */} <button id="Derivative"       >df/dx</button>
+    {/*  1,3  */}
+    {/*  1,4  */} <button id="Limit"            >lim_ x to </button>
+    {/*  1,5  */}
+    {/*  2,0  */} <button id="Infinity"         >Inf</button>
+    {/*  2,1  */}
+    {/*  2,2  */} <button id="Antiderivative"         >∫ f(x) dx</button>
+    {/*  2,3  */}
+    {/*  2,4  */} <button id="Integral"         >∫ab f(x) dx</button>
+    {/*  2,5  */}
+</div>
+</>
+  )
+}
+ 
+import './Name.css'
+ 
+const Algebra = (props)=>{
+    // const ButtonClick = () => {});};
+  return (
+    <>
+    <button
+    // https://blog.logrocket.com/complete-guide-react-default-props/
+    id={props.id.toString()} 
+    onClick={alert('HelloNewtonHeisenberg')}>
+    {props.id}
+    </button>
+    </>
+)
+}
+
+const Algebras = () => {
+  return (
+<>
+<div class="Algebra">
+  <Algebra  id='0'/>
+  <Algebra  id='1'/>
+  <Algebra  id='2'/>
+  <Algebra  id='3'/>
+  <Algebra  id='4'/>
+  <Algebra  id='5'/>
+  <Algebra  id='6'/>
+  <Algebra  id='7'/>
+  <Algebra  id='8'/>
+  <Algebra  id='9'/>
+  <Algebra id='π'/>
+  <Algebra  id='e' />
+</div>
+</>
+)
+}
+ 
+const ComposeFunction = () => {
+  return (
+<>
+<div class="ComposeFunction">
+    {/*  0,0  */} <button id="OpenS"            >[</button>
+    {/*  0,1  */} <button id="ClosS"            >]</button>
+    {/*  0,2  */} <button id="Product"          >Pi</button>
+    {/*  0,3  */}
+    {/*  0,4  */} <button id="Sigma"            >Sigma</button>
+    {/*  0,5  */}
+    {/*  1,0  */} <button id="Equal"            >=</button>
+    {/*  1,1  */} <button id="Question"         >?</button>
+    {/*  1,2  */} <button id="Derivative"       >df/dx</button>
+    {/*  1,3  */}
+    {/*  1,4  */} <button id="Limit"            >lim_ x to </button>
+    {/*  1,5  */}
+    {/*  2,0  */} <button id="Infinity"         >Inf</button>
+    {/*  2,1  */}
+    {/*  2,2  */} <button id="Antiderivative"         >∫ f(x) dx</button>
+    {/*  2,3  */}
+    {/*  2,4  */} <button id="Integral"         >∫ab f(x) dx</button>
+    {/*  2,5  */}
+</div>
+</>
+  )
+}
+ 
+    // 
+ 
+Var
+ 
+<div class="Name">
+    <NumberButton id='a' num=''/>
+    <NumberButton id='b' num=''/>
+    <NumberButton id='c' num=''/>
+    <NumberButton id='d' num=''/>
+    <NumberButton id='f' num=''/>
+    <NumberButton id='g' num=''/>
+    <NumberButton id='h' num=''/>
+    <NumberButton id='i' num=''/>
+    <NumberButton id='j' num=''/>
+    <NumberButton id='x' num=''/>
+    <NumberButton id='y' num=''/>
+    <NumberButton id='z' num=''/>
+</div>
+ 
+Var
+ 
+setInput((prevInput) => {
+      if (props.num===undefined){return prevInput + props.id.toString();}
+      else{return prevInput + props.num.toString();}
+ 
+Var
+ 
+<div class="Number">
+  <NumberButton id='0'/>
+  <NumberButton id='1'/>
+  <NumberButton id='2'/>
+  <NumberButton id='3'/>
+  <NumberButton id='4'/>
+  <NumberButton id='5'/>
+  <NumberButton id='6'/>
+  <NumberButton id='7'/>
+  <NumberButton id='8'/>
+  <NumberButton id='9'/>
+  <CheckButton id='π'/>
+  <NumberButton id='e' />
+</div>
+ 

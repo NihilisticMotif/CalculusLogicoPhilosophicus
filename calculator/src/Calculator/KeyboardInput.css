@@ -1,0 +1,19 @@
+#KeyboardInput {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    height: 100px;
+    text-align: center;
+}
+
+#KeyboardInput input {
+    color: #000000;
+    padding-top: 10px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 30px;
+}

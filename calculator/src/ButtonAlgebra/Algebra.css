@@ -1,0 +1,24 @@
+.Algebra button:hover {
+    background-color: #c8ae1b;
+    color: #910c0c;
+}
+
+.Algebra{
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+}
+
+.Algebra button {
+    /*
+Reference:
+* https://www.w3schools.com/css/css3_buttons.asp
+* https: //youtu.be/uuOXPWCh-6o?si=EygWU8oXVLb3omTQ
+*/
+    background-color: #4CAFA0;
+    border: 1px solid #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    color: #093953;
+}

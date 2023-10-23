@@ -1,0 +1,34 @@
+.ComposeFunction button:hover {
+    color: #c8ae1b;
+    background-color: #910c0c;
+}
+
+.ComposeFunction {
+    display: grid;
+    grid-template-columns: repeat(6, 0fr);
+}
+
+.ComposeFunction button:not(#OpenS,#ClosS,#Equal,#Question){
+    width: 200px;
+    grid-column: span 2;
+}
+
+#OpenS,#ClosS,#Equal,#Question {
+    width: 100px;
+    grid-column: span 1;
+}
+
+.ComposeFunction button {
+    /*
+Reference:
+* https://www.w3schools.com/css/css3_buttons.asp
+* https: //youtu.be/uuOXPWCh-6o?si=EygWU8oXVLb3omTQ
+*/
+    background-color: #093953;
+    border: 1px solid #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    color: #4CAFA0;
+}
