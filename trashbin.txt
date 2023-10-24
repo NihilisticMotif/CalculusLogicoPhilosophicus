@@ -1,3 +1,400 @@
+props
+ 
+.toString()
+ 
+props
+ 
+.bind
+ 
+.id
+ 
+.id
+ 
+.id
+ 
+.id
+ 
+toString()
+ 
+Click={Print()}
+ 
+    const beforeClick = () => {
+        props.Click() //alert('props.Click()') // Replace this function with your desired action.
+    };
+ 
+props
+ 
+const NumberButton = (props)=>{
+    const beforeClick = () => {
+        props.Click(); // This will display the alert when the button is clicked.
+    };
+return (
+<>
+<button
+// https://blog.logrocket.com/complete-guide-react-default-props/
+id={props.id.toString()} 
+onClick={beforeClick}
+>
+{props.id}
+</button>
+</>
+)
+}
+ 
+firstNameProps.value
+ 
+Click={useInput.onClick()}
+ 
+props
+ 
+{/*onChange={handleInputChange}*/}
+ 
+ Click={useInput.onClick()}
+ 
+  
+ 
+</div>
+ 
+<div class="Number">
+ 
+Click={ButtonClick()}
+ 
+props
+ 
+()
+ 
+Button
+ 
+  const setInput = () => {alert('hii')}
+ 
+//
+ 
+((prevInput) => prevInput.length)
+ 
+import useInput from '../Hook/useInput.js'
+ 
+ButtonClick={setInput}
+ 
+onChange={handleInputChange}
+ 
+*/
+ 
+props
+ 
+props
+ 
+props
+ 
+export default NumberButtonS
+ 
+import { useState , useEffect} from 'react'
+ 
+ => 
+ 
+ = 
+ 
+<div class="Function">
+  {/* 0,0 */} <OperationButton id='+'/>
+  {/* 0,1 */} <OperationButton id='-'/>
+  {/* 0,2 */} <NumberButton id='||' num='|'/>
+  {/* 0,3 */} <NumberButton id='.'/>
+  {/* 0,4 */} <NumberButton id='sin'  num='sin(' />
+  {/* 0,5 */} <NumberButton id='asin' num='asin('/>
+  {/* 1,0 */} <OperationButton id='*'/>
+  {/* 1,1 */} <OperationButton id='/'/>
+  {/* 1,2 */} <OperationButton id='('/>
+  {/* 1,3 */} <NumberButton id=')'/>
+  {/* 1,4 */} <NumberButton id='cos' num='cos(' />
+  {/* 1,5 */} <NumberButton id='acos'num='acos('/>
+  {/* 2,0 */} <OperationButton id='^'/>
+  {/* 2,1 */} <NumberButton id='log' num='log('/>
+  {/* 2,2 */} <NumberButton id='['/>
+  {/* 2,3 */} <NumberButton id=']'/>
+  {/* 2,4 */} <NumberButton id='tan' num='tan(' />
+  {/* 2,4 */} <NumberButton id='atan'num='atann('/>
+</div>
+ 
+  <NumberButton id='1'/>
+  <NumberButton id='2'/>
+  <NumberButton id='3'/>
+  <NumberButton id='4'/>
+  <NumberButton id='5'/>
+  <NumberButton id='6'/>
+  <NumberButton id='7'/>
+  <NumberButton id='8'/>
+  <NumberButton id='9'/>
+  <NumberButton id='pi'/>
+  <NumberButton id='e' />
+ 
+const [input,setInput]=useState()
+  useEffect(()=>{
+    setInput('')},
+    [] // Runs only on the first render https://www.w3schools.com/react/react_useeffect.asp
+    //[input] // Runs on the first render and when variable 'input' is change
+    )
+
+  const NumberButton = (props)=>{
+    const ButtonClick = () => {
+    setInput((prevInput) => {
+      if (props.num===undefined){return prevInput + props.id.toString();}
+      else{return prevInput + props.num.toString();}
+    });
+  };
+  return (
+    <>
+    <button
+    // https://blog.logrocket.com/complete-guide-react-default-props/
+    id={'B'+props.id.toString()} 
+    onClick={ButtonClick}>
+    {props.id}
+    </button>
+    </>
+  )
+  }
+
+  const OperationButton = (props)=>{
+  const ButtonClick = () => {
+    setInput((prevInput) => {
+      if (prevInput==='') {return prevInput;} 
+      else{
+        let Condition=['+','-','*','/','^'].includes(prevInput.slice(-1))
+        if (Condition) {return prevInput;} 
+        else{return prevInput + props.id.toString();}
+      }
+    });
+  };
+  return (
+    <>
+    <button
+    // https://blog.logrocket.com/complete-guide-react-default-props/
+    id={'B'+props.id.toString()} 
+    onClick={ButtonClick}>
+    {props.id}
+    </button>
+    </>
+  )
+  }
+
+//  const CheckButton = (props)=>{
+//  const ButtonClick = () => {
+//    setInput((prevInput) => {
+//      if (prevInput==='') {return 'true';} 
+//      else{
+//        return 'false'
+//      }
+//    });
+//  };
+//  return (
+//    <>
+//    <button
+//    // https://blog.logrocket.com/complete-guide-react-default-props/
+//    id={'B'+props.id.toString()} 
+//    onClick={ButtonClick}>
+//    {props.id}
+//    </button>
+//    </>
+//  )
+//  }
+ 
+props
+ 
+/*
+ 
+/*
+  const Operation = () => {
+  setInput((prevInput) => {
+    if (prevInput==='') {return prevInput;} 
+    else{
+      let Condition=['+','-','*','/','^'].includes(prevInput.slice(-1))
+      if (Condition) {return prevInput;} 
+      else{return prevInput + props.id.toString();}}
+    });
+    };
+  */
+ 
+useEffect(()=>{
+  setInput('')},
+  [] // Runs only on the first render https://www.w3schools.com/react/react_useeffect.asp
+  //[input] // Runs on the first render and when variable 'input' is change
+  )
+ 
+    onClick01: Operation
+ 
+Click
+ 
+Click00
+ 
+Click
+ 
+    };
+ 
+  const ButtonClick = () => {
+ 
+    value:0,
+ 
+'B'+
+ 
+import {useState} from 'react'
+
+export function useInput() {
+  const [input, setInput] = useState();
+  const ButtonClick = () => {
+  setInput((prevInput) => {
+    if (props.num===undefined){return prevInput + props.id.toString();}
+    else{return prevInput + props.num.toString();}
+    });
+    };
+
+  const Button = {
+    onClick: ButtonClick
+  };
+
+  return Button;
+}
+ 
+export function useFormInput(initialValue) {
+  const [value, setValue] = useState(initialValue);
+
+  function handleChange(e) {
+    setValue(e.target.value);
+  }
+
+  const inputProps = {
+    value: value,
+    onChange: handleChange
+  };
+
+  return inputProps;
+}
+
+ 
+    value: value,
+ 
+  function handleChange(e) {
+    setValue(e.target.value);
+  }
+ 
+andleChange
+ 
+const ButtonClick = () => {
+  setInput((prevInput) => {
+    if (props.num===undefined){return prevInput + props.id.toString();}
+    else{return prevInput + props.num.toString();}
+  });
+};
+ 
+props.
+ 
+initialValue
+ 
+initialValue
+ 
+ , useEffect
+ 
+export function useFormInput(initialValue) {
+  const [value, setValue] = useState(initialValue);
+
+  function handleChange(e) {
+    setValue(e.target.value);
+  }
+
+  const inputProps = {
+    value: value,
+    onChange: handleChange
+  };
+
+  return inputProps;
+}
+ 
+Button
+ 
+Button
+ 
+    const [input, setInput] = useState();
+ 
+{}
+  const ButtonClick = () => 
+ 
+initialValue
+ 
+  
+ 
+    
+ 
+function hello(){alert('Hello')}
+ 
+ onClick={()=>setInput((prevInput) => prevInput.target.value)}
+ 
+props.id.toString()
+ 
+function handleFirstNameChange(e) {
+    input(e.target.value);
+  }
+ 
+onChange={handleFirstNameChange}
+ 
+{/*
+ 
+  <input type='text' value='ee'></input>
+ 
+onChange={input.target.value}
+ 
+onChange={input.target.value}
+ 
+  <h1>{input}</h1>
+ 
+type="text" 
+ 
+ name="name"
+ 
+required minlength="4" maxlength="8" size="10" 
+ 
+  <label for="lname">Last name:</label>
+ 
+  <input type="text" id="lname" name="lname"><br></br>
+ 
+ type="text" id="lname" name="lname"
+ 
+{/*
+ 
+   
+ 
+  {/* 0,2 */} <NumberButton id='='/>
+  {/* 0,3 */} <NumberButton id='.'/>
+ 
+  {/* 1,2 */} <OperationButton id='('/>
+  {/* 1,3 */} <NumberButton id=')'/>
+ 
+  {/* 2,2 */} <NumberButton id='['   num=''/>
+  {/* 2,3 */} <NumberButton id=']'   num=''/>
+ 
+  num='|'
+ 
+atann(
+ 
+tan(
+ 
+acos(
+ 
+cos(
+ 
+sin(
+ 
+log
+ 
+  <NumberButton id='0'/>
+  <NumberButton id='1'/>
+  <NumberButton id='2'/>
+  <NumberButton id='3'/>
+  <NumberButton id='4'/>
+  <NumberButton id='5'/>
+  <NumberButton id='6'/>
+  <NumberButton id='7'/>
+  <NumberButton id='8'/>
+  <NumberButton id='9'/>
+ 
+//
+ 
 {"input"}
  
 <input type="text" id="lname" name="lname"/>

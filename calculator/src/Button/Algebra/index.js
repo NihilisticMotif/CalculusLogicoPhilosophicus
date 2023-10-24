@@ -1,4 +1,4 @@
-import './Algebra.css'
+import './index.css'
 
 const Algebra = (props)=>{
   const ButtonClick = () => {
@@ -12,14 +12,15 @@ return (
   <button
   // https://blog.logrocket.com/complete-guide-react-default-props/
   id={props.id.toString()} 
-  onClick={alert('Newton')}>
+  //onClick={alert('Newton')}
+  >
   {props.id}
   </button>
   </>
 )
 }
 
-const Algebras = ()=>{
+const AlgebraS = ()=>{
     return (
 <>
 <div class="Algebra">
@@ -39,3 +40,4 @@ const Algebras = ()=>{
 </>
     )
 }
+export default AlgebraS

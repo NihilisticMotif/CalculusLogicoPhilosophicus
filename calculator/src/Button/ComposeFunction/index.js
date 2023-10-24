@@ -1,4 +1,4 @@
-import './ComposeFunction.css'
+import './index.css'
 
 const ComposeFunction = (props)=>{
   const ButtonClick = () => {
@@ -12,14 +12,15 @@ return (
   <button
   // https://blog.logrocket.com/complete-guide-react-default-props/
   id={props.id.toString()} 
-  onClick={alert('Newton')}>
+  //onClick={alert('Newton')}
+  >
   {props.show}
   </button>
   </>
 )
 }
 
-const ComposeFunctions=()=>{
+const ComposeFunctionS=()=>{
     return(
 <>
 <div class="ComposeFunction">
@@ -45,3 +46,4 @@ const ComposeFunctions=()=>{
 </>
 )
 }
+export default ComposeFunctionS
